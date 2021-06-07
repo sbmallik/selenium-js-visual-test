@@ -1,0 +1,16 @@
+{
+  "silent": false,
+  "setupFilesAfterEnv": [
+    "./setupFilesAfterEnv.js"
+  ],
+  "testRegex": "./test/.*\\.(test)\\.js",
+  "testEnvironment": "node",
+  "reporters": [ "default", [
+    "jest-junit", {
+      "outputDirectory": "reports",
+      "outputName": "reportVisualTest.xml"
+    }]
+  ],
+  "maxConcurrency": 1,
+  "rootDir": "./"
+}
